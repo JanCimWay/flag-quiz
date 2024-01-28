@@ -195,3 +195,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+function nextStep() {
+    if (answeredAnswerCount <= 9) {
+        getNewQuestion();
+    } else {
+        footer.remove();
+        quiz.remove();
+        resultParagraph.innerHTML = `${correctAnswerCount}` + " of 10";
+        resultReset.innerHTML = "restart the game";
+        if (correctAnswerCount < 5) {
+            resultHeading.innerHTML = "I know You can better! Take a brake and try one more time!";
+        } else if (correctAnswerCount < 8) {
+            resultHeading.innerHTML = "Good job! But there is still place for improvement!";
+        } else {
+            resultHeading.innerHTML = "You are genious! Who could imagine that?";
+        }
+    }
+}
