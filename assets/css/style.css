@@ -106,6 +106,10 @@ h3 {
     border: 1px solid #2a70c0;
 }
 
+#nxt-question {
+    display: none;
+}
+
 /* Modal screen styling */
 
 #modal-screen {
