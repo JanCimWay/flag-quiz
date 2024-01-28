@@ -107,6 +107,13 @@ let answ3 = document.getElementById("answ3");
 let answ4 = document.getElementById("answ4");
 let answers = document.getElementsByClassName("answer");
 
+let currentCorrect;
+let answeredAnswerCount = 0;
+let correctAnswerCount = 0;
+let wrongAnswerCount = 0;
+
+let nxtQuestion = document.getElementById("nxt-question");
+
 /* Function completed when new question needs too be displayed */
 function getNewQuestion() {
   questionNumber = Math.floor(Math.random() * questions.length);
@@ -117,11 +124,65 @@ function getNewQuestion() {
   answ3.innerHTML = questions[questionNumber].answers[2];
   answ4.innerHTML = questions[questionNumber].answers[3];
   currentCorrect = questions[questionNumber].correct;
+  
+  /* Enable blocked answers */
+  answ1.disabled = false;
+  answ2.disabled = false;
+  answ3.disabled = false;
+  answ4.disabled = false;
+
+  /* Return button color */
+  for (let i = 0; i < answers.length; i++) {
+    answers[i].style.backgroundColor = "#a4d4ed";
+    answers[i].style.color = "#2a70c0";
+  }
 
   /* Finding particular correct answer */
   currentCorrect = questions[questionNumber].correct;
 }
 
-getNewQuestion();
+function checkAnswer() {
+    /* colors answers - marking the right and wrong */
+    for (let i = 0; i < answers.length; i++)
+
+        if (answers[i].innerHTML === currentCorrect) {
+            answers[i].style.backgroundColor = "green";
+            answers[i].style.color = "#efeceb";
+        } else {
+            answers[i].style.backgroundColor = "red";
+            answers[i].style.color = "#efeceb";
+        }
+    /* Disables buttons after the answer is chosen */
+    answ1.disabled = "disabled";
+    answ2.disabled = "disabled";
+    answ3.disabled = "disabled";
+    answ4.disabled = "disabled";
+    nxtQuestion.style.display = "block";
+}
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    /* When the dom loads - the new question loads */
+    getNewQuestion();
+
+    /* check if answer  is correct and add count to correct or wrong answers */
+    for (let answer of answers) {
+        answer.addEventListener("click", function () {
+            answeredAnswerCount = answeredAnswerCount + 1;
+            if (this.innerHTML === currentCorrect) {
+                console.log("right");
+                correctAnswerCount = correctAnswerCount + 1;
+            } else {
+                console.log("wrong choice");
+                wrongAnswerCount = wrongAnswerCount + 1;
+            }
+
+        });
+    }
+
+    /* Placing the check answer - color marking function in the loop*/
+    for (let i = 0; i < answers.length; i++) {
+        answers[i].addEventListener('click', checkAnswer);
+    }
+
+});
