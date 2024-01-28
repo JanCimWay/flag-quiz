@@ -134,6 +134,10 @@ function getNewQuestion() {
         /* Finding particular correct answer */
         currentCorrect = questions[questionNumber].correct;
 
+        document.getElementById("wrong").textContent = wrongAnswerCount;
+        document.getElementById('right').textContent = correctAnswerCount;
+        document.getElementById('total').textContent = answeredAnswerCount;
+
         /* Enable blocked answers */
         answ1.disabled = false;
         answ2.disabled = false;
