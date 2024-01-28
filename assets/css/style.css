@@ -60,6 +60,52 @@ h3 {
     margin: 30px 0;
 }
 
+/* Button styling */
+
+.btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+    font-family: 'Tektur', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-gray {
+    background-color: #efeceb;
+    box-shadow: 0px 0px 4px #efeceb;
+    color: #2a70c0;
+    text-shadow: 0px 0px 4px #2a70c0;
+}
+
+.btn-gray:hover {
+    box-shadow: 0px 0px 10px #efeceb;
+    text-shadow: 0px 0px 10px #2a70c0;
+}
+
+.btn-blue {
+    background-color: #a4d4ed;
+    box-shadow: 0px 0px 4px #a4d4ed;
+    color: #2a70c0;
+    text-shadow: 0px 0px 4px #2a70c0;
+}
+
+.btn-blue:hover {
+    box-shadow: 0px 0px 10px #a4d4ed;
+    text-shadow: 0px 0px 10px #2a70c0;
+}
+
+#start-game {
+    font-size: 130%;
+}
+
+.btn-s {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #2a70c0;
+}
+
 /* Modal screen styling */
 
 #modal-screen {
