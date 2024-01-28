@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Quiz</title>
+    <!-- Favicon icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Flag quiz</h1></a>
+    </header>
+    
+    <main>
+        <div id="quiz">
+            <div id="question-div"><img id="question-img" alt="question flag"></div>
+            <br>
+            <br>
+            <div class="answer-main">
+                <div class="answer-sub">
+                    <button class="answer btn btn-blue" id="answ1"></button>
+                    <button class="answer btn btn-blue" id="answ2"></button>
+                </div>
+                <div class="answer-sub">
+                    <button class="answer btn btn-blue" id="answ3"></button>
+                    <button class="answer btn btn-blue" id="answ4"></button>
+                </div>
+                <div id="bottom-btn-blck">
+                    <button class="btn btn-gray" id="nxt-question">Next question</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal screen -->
+    <div id="modal-screen">
+        <div id="modal-box">
+            <p id="close">&times;</p>
+            <h3>Game instructions</h3>
+            <br>
+            <ol>
+                <li>There will be 10 questions</li>
+                <li>We will show You a flag and give You 4 possible answer options with a country it represents</li>
+                <li>Chose Your answer and click "next question"</li>
+                <li>In the end we will show You Your score.</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Answer counter -->
+        <p>Right answers: <span id="right"> </span> Wrong answers: <span id="wrong"> </span> Total answers: <span id="total"> </span></p>
+        <p>Copyright Flagquiz international</p>
+    </footer>
+
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/e5ded09796.js" crossorigin="anonymous"></script>
+    <!-- Javascript file -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
