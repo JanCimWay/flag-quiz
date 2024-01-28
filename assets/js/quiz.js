@@ -196,6 +196,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+nxtQuestion.addEventListener('click', nextStep);
+
+/* Function changing the reaction of algorithm, of the answered question count reaches 10 */
 function nextStep() {
     if (answeredAnswerCount <= 9) {
         getNewQuestion();
