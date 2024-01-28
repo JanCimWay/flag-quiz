@@ -96,3 +96,13 @@ let questions = [{
     correct: "Serbia",
 },
 ];
+
+/* General variable definition */
+let question = document.getElementById("question-img");
+/* Create a random number from 0 to count of questions */
+let questionNumber = Math.floor(Math.random() * questions.lenght);
+let answ1 = document.getElementById("answ1");
+let answ2 = document.getElementById("answ2");
+let answ3 = document.getElementById("answ3");
+let answ4 = document.getElementById("answ4");
+let answers = document.getElementById("answer");
