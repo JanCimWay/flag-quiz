@@ -100,25 +100,28 @@ let questions = [{
 /* General variable definition */
 let question = document.getElementById("question-img");
 /* Create a random number from 0 to count of questions */
-let questionNumber = Math.floor(Math.random() * questions.lenght);
+let questionNumber = Math.floor(Math.random() * questions.length);
 let answ1 = document.getElementById("answ1");
 let answ2 = document.getElementById("answ2");
 let answ3 = document.getElementById("answ3");
 let answ4 = document.getElementById("answ4");
-let answers = document.getElementById("answer");
+let answers = document.getElementsByClassName("answer");
 
 /* Function completed when new question needs too be displayed */
 function getNewQuestion() {
-  questionNumber = Math.floor(Math.random() * questions.lenght);
+  questionNumber = Math.floor(Math.random() * questions.length);
   /* lines for filling the question and answer fields */
   question.src = questions[questionNumber].question;
   answ1.innerHTML = questions[questionNumber].answers[0];
   answ2.innerHTML = questions[questionNumber].answers[1];
   answ3.innerHTML = questions[questionNumber].answers[2];
   answ4.innerHTML = questions[questionNumber].answers[3];
+  currentCorrect = questions[questionNumber].correct;
 
   /* Finding particular correct answer */
   currentCorrect = questions[questionNumber].correct;
 }
 
 getNewQuestion();
+
+
