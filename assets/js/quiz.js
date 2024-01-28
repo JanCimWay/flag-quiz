@@ -107,6 +107,10 @@ let answ3 = document.getElementById("answ3");
 let answ4 = document.getElementById("answ4");
 let answers = document.getElementsByClassName("answer");
 
+/* Array for already answered/asked questions */
+let askedQuestionArray = [];
+
+let currentAnswer;
 let currentCorrect;
 let answeredAnswerCount = 0;
 let correctAnswerCount = 0;
@@ -116,29 +120,34 @@ let nxtQuestion = document.getElementById("nxt-question");
 
 /* Function completed when new question needs too be displayed */
 function getNewQuestion() {
-  questionNumber = Math.floor(Math.random() * questions.length);
-  /* lines for filling the question and answer fields */
-  question.src = questions[questionNumber].question;
-  answ1.innerHTML = questions[questionNumber].answers[0];
-  answ2.innerHTML = questions[questionNumber].answers[1];
-  answ3.innerHTML = questions[questionNumber].answers[2];
-  answ4.innerHTML = questions[questionNumber].answers[3];
-  currentCorrect = questions[questionNumber].correct;
-  
-  /* Enable blocked answers */
-  answ1.disabled = false;
-  answ2.disabled = false;
-  answ3.disabled = false;
-  answ4.disabled = false;
+    questionNumber = Math.floor(Math.random() * questions.length);
+    if (!askedQuestionArray.includes(questions[questionNumber])) {
+        askedQuestionArray.push(questions[questionNumber]);
+        currentAnswer = questions[questionNumber];
+        console.log(askedQuestionArray);
+        /* lines for filling the question and answer fields */
+        question.src = questions[questionNumber].question;
+        answ1.innerHTML = questions[questionNumber].answers[0];
+        answ2.innerHTML = questions[questionNumber].answers[1];
+        answ3.innerHTML = questions[questionNumber].answers[2];
+        answ4.innerHTML = questions[questionNumber].answers[3];
+        /* Finding particular correct answer */
+        currentCorrect = questions[questionNumber].correct;
 
-  /* Return button color */
-  for (let i = 0; i < answers.length; i++) {
-    answers[i].style.backgroundColor = "#a4d4ed";
-    answers[i].style.color = "#2a70c0";
-  }
+        /* Enable blocked answers */
+        answ1.disabled = false;
+        answ2.disabled = false;
+        answ3.disabled = false;
+        answ4.disabled = false;
 
-  /* Finding particular correct answer */
-  currentCorrect = questions[questionNumber].correct;
+        /* Return button color */
+        for (let i = 0; i < answers.length; i++) {
+            answers[i].style.backgroundColor = "#a4d4ed";
+            answers[i].style.color = "#2a70c0";
+        }
+    } else {
+        getNewQuestion();
+    }
 }
 
 function checkAnswer() {
