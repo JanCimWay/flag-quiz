@@ -135,8 +135,8 @@ h3 {
     text-align: right;
 }
 
-close:hover,
-close:focus {
+#close:hover,
+#close:focus {
     color: #a4d4ed;
     cursor: pointer;
 }
