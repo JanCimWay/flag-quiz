@@ -112,9 +112,17 @@ let askedQuestionArray = [];
 
 let currentAnswer;
 let currentCorrect;
+
 let answeredAnswerCount = 0;
 let correctAnswerCount = 0;
 let wrongAnswerCount = 0;
+
+let footer = document.getElementById("footer");
+let quiz = document.getElementById("quiz");
+
+let resultHeading = document.getElementById("hidden-heading");
+let resultParagraph = document.getElementById("hidden-paragraph");
+let resultReset = document.getElementById("hidden-a");
 
 let nxtQuestion = document.getElementById("nxt-question");
 
