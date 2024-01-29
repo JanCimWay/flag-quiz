@@ -206,29 +206,29 @@ Game page is created very simple, as there are not many features, everything is 
 #### Report on mobile devices
 
 <details>
-<summary>Index (Home) page </summary>
+<summary>Index page </summary>
 
-![Index page lighthouse report - mobile]()
+![Index page lighthouse report - mobile](/assets/images/lightning/lightning-index-mob.JPG)
 </details>
 
 <details>
-<summary>Gallery page</summary>
+<summary>Game page</summary>
 
-![Gallery page lighthouse report - mobile]()
+![Game page lighthouse report - mobile](/assets/images/lightning/lightning-game-mob.JPG)
 </details>
 
 #### Report on Desktops
 
 <details>
-<summary>Index (Home) page </summary>
+<summary>Index page </summary>
 
-![Index page lighthouse report - desktop]()
+![Index page lighthouse report - desktop](/assets/images/lightning/lightning-index-desk.JPG)
 </details>
 
 <details>
 <summary>Gallery page</summary>
 
-![Gallery page lighthouse report - desktop]()
+![Game page lighthouse report - desktop](/assets/images/lightning/lightning-game-desk.JPG)
 </details>
 
 ### Bugs Fixed
