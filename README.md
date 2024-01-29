@@ -233,8 +233,9 @@ Game page is created very simple, as there are not many features, everything is 
 
 ### Bugs Fixed
 
-* During the last testing phase using [W3C Markup Validator](https://validator.w3.org/) a missing div closing tag was noticed in one of the recipe pages, so it had to be placed in all 10 of them
-* Button in the heading with logo on it, was covering the heading in all width, had to be fixed.
+* During the last testing phase using [JS Hint validator](https://jshint.com) missing semicolons apperad, despite working code.
+* When new question appeared (function was called), next question button was visible - so it was possible to brake the game, as game offered new and new quesions just by clicking "next" and not choosing answer, till there were no new questions available.
+* Lot of minor transcriptic bugs, which made functions to work faulty or not to work. All of them were solved by seperating code and testing already seperate elements/parts of code.
 
 ---
 
@@ -280,6 +281,3 @@ Site can be found: (<https://jancimway.github.io/flag-quiz/>)
 
 ### Media
 
-* [Pixabay](https://pixabay.com/) - Royality free mage source*.jpg to*
-* [Convertio](https://convertio.co/) - Tool for converting pictures from jpg to webp
-* [FreeConvert](https://www.freeconvert.com/) - for converting pictures from jpg to webp
