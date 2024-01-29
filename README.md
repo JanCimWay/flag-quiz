@@ -53,7 +53,7 @@ Flag quiz is a very short, easy game where a player can check his/her knowledge 
 ## User Experience (UX)
 
 Game is create for very clear and easy understandable rules. A player is trying his knowledge of the flags. Game will show to player 10 diferent country flags, and for each of them there will be shoen 4 answers.
-Player has to make his choice to test his knowledge. 
+Player has to make his choice to test his knowledge.
 
 ### User stories
 
@@ -77,9 +77,9 @@ Game page is created very simple, as there are not many features, everything is 
 ![Heading](/assets/images/features/features-heading.JPG)
 
 * Welcome and start
-  * In the middle of the index page there is located 3 important things: 
-  * Welcome message to greet the player, 
-  * Start button, to approach the game, 
+  * In the middle of the index page there is located 3 important things:
+  * Welcome message to greet the player,
+  * Start button, to approach the game,
   * Instruction button - which leads the player to the modal box element, where the layer can check the instructions - how to play.
 
 ![Welcome and start](/assets/images/features/features-welcome.JPG)
@@ -95,9 +95,9 @@ Game page is created very simple, as there are not many features, everything is 
 ![Modal box](/assets/images/features/features-modal.JPG)
 
 * Game zone
-  * In the game zone there is showed a flag and 4 answer options. 
-  * After clicking one of the answers, 
-    * all the answer buttons will be deactivated, 
+  * In the game zone there is showed a flag and 4 answer options.
+  * After clicking one of the answers,
+    * all the answer buttons will be deactivated,
     * buttons will be colored - red color wrong answers, and green color, right ones
     * new button "next question" will appear, by clicking which, player can move to next question
 
@@ -109,11 +109,11 @@ Game page is created very simple, as there are not many features, everything is 
 ![Footer in Game zone](/assets/images/features/features-footer-game-zone.JPG)
 
 * Result
-  * When player has cliked 10 times on the button "next question", the game has will end. New screen will appear, giving some message to player, depending on his success. 
+  * When player has cliked 10 times on the button "next question", the game has will end. New screen will appear, giving some message to player, depending on his success.
     * First message will be if player will get less than 5 (0 - 4 points)  
     * Another message, if 5 till 7 answers will be right
     * And the last version of message will be if there will be 8 and more
-    * Below the message, 
+    * Below the message,
 
 ![Result](/assets/images/features/features-result.JPG)
 
@@ -167,7 +167,7 @@ Game page is created very simple, as there are not many features, everything is 
 
 ### Validation testing
 
-* Code from each of HTML, CSS and JavaScript pages were checked by validator. 
+* Code from each of HTML, CSS and JavaScript pages were checked by validator.
 * For the HTML files was used [W3C Markup Validator](https://validator.w3.org/), for CSS [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and for Javascript [JS Hint](https://jshint.com/)
 * Results:
   * HTML validator found as error in document index.html, that button element appears between a tags. Meanwhile there was no found due this error, but it should be potentialy corrected replacing a button with other element.
@@ -175,9 +175,9 @@ Game page is created very simple, as there are not many features, everything is 
   * Javascript validator noted that all the used "let" are available in ES6 or Mozilla extensions.
   * Recomeneded that file is containing a  loop inside of which is a function, but the variable is declered outside. THhi should be avoided.
 
-
 <details>
-<summary>index.html</summary>
+<summary>index.html
+</summary>
 
 ![Index page validation result](/assets/images/validate/index-html-valid.JPG)
 </details>
