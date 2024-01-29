@@ -128,6 +128,7 @@ let nxtQuestion = document.getElementById("nxt-question");
 
 /* Function completed when new question needs too be displayed */
 function getNewQuestion() {
+    nxtQuestion.style.display = "none";
     questionNumber = Math.floor(Math.random() * questions.length);
     if (!askedQuestionArray.includes(questions[questionNumber])) {
         askedQuestionArray.push(questions[questionNumber]);
