@@ -2,7 +2,7 @@
 
 Flag quiz is a very short, easy game where a player can check his/her knowledge of country flags.
 
-![Design is responsive](/assets/images/readme-img/Responsiv-jpg.jpg)
+![Design is responsive](/assets/images/images/mockup.jpg)
 
 ---
 
@@ -127,9 +127,9 @@ Game page is created very simple, as there are not many features, everything is 
 ## Design
 
 * Color scheme
-  * In the game there are used 3 main colors: #2a70c0, #a4d4ed, #efeceb. Besides them there are used seperate colors, to indicate wrong and right answers, but they are not in color scheme, as symbols are small but they sould be good visible.
+  * Firsty there was chosen a wide range of colors, from which were selected only couple options. In the game there are used 3 main colors: #2a70c0, #a4d4ed, #efeceb. Besides them there are used seperate colors, to indicate wrong and right answers, but they are not in color scheme, as symbols are small but they sould be good visible.
 
-![color palletes](/assets/images/prtscreens/color-schemes.jpg)
+![color palletes](/assets/images/images/colors.jpg)
 
 * Fonts
   * As a font for the main game is us used Tektur, as fallback font sans-serif. Despite that Tektur oculd seem that has bad readability -  it is good enough for big sepearte words at the same time it is very appropriate for such a simple game.
@@ -137,7 +137,7 @@ Game page is created very simple, as there are not many features, everything is 
   * Wireframes
   * For creating general structure, wireframes were created. Not only for location of objects but as well for color choices. But in the process it was changed.
 
-![Wireframe](/assets/images/prtscreens/wireframe.jpg)
+![Wireframe](/assets/images/image/wireframe.jpg)
 
 ---
 
@@ -145,7 +145,7 @@ Game page is created very simple, as there are not many features, everything is 
 
 * HTML5
 * CSS
-* Javascript
+* JavaScript
 
 ---
 
